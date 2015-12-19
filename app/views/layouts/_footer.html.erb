@@ -1,0 +1,40 @@
+This page was last updated at <%= @last_updated %>
+<nav class="navbar navbar-inverse navbar-static-bottom">
+  <div class="container-fluid">
+
+
+
+
+    <div class="navbar-header">
+      <!-- make button upon collapse -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Bottom-Navbar-Button" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+      </button>
+      
+
+        <p><ul class="navbar-text">&copy; Copyright 2015 Nikolas Chaconas. All Rights Reserved.</ul></p>
+
+    </div>
+
+  <!-- When in normal view this appears -->
+    <div class="collapse navbar-collapse" id="Bottom-Navbar-Button">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/nikolas.j.chaconas" target="_blank">
+          <%=image_tag "Facebook.png", class:"share"%>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/nikolaschaconas" target="_blank">
+          <%=image_tag "LinkedIn.png", class:"share"%>
+        </a></li>
+        <li><a href="https://github.com/nikolasjchaconas" target="_blank">
+          <%=image_tag "Github.png", class:"share"%>
+        </a></li>
+      </ul>
+     </div>
+
+     
+
+
+
+  </div>
+</nav>

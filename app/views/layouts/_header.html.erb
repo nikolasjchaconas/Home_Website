@@ -1,0 +1,37 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Nikolas Chaconas</a>
+      <!-- make button upon collapse -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <!-- three bars for button -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <!-- <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> -->
+
+      </button>
+    </div>
+
+	<!-- When in normal view this appears -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="#">Music</a></li> 
+        <li><a href="#">Resume</a></li>
+        <li><a href="https://www.facebook.com/nikolas.j.chaconas" target="_blank">
+          <%=image_tag "Facebook.png", class:"share"%>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/nikolaschaconas" target="_blank">
+          <%=image_tag "LinkedIn.png", class:"share"%>
+        </a></li>
+        <li><a href="https://github.com/nikolasjchaconas" target="_blank">
+          <%=image_tag "Github.png", class:"share"%>
+        </a></li>
+      </ul>
+     </div>
+  </div>
+</nav>
