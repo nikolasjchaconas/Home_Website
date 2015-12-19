@@ -17,8 +17,7 @@
 
 /*bottom of nav bar is 50px*/
 body { 
-	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-top: 30px;
 }
 
 .share {
@@ -28,11 +27,53 @@ body {
 
 }
 
+.white {
+    color: white;
+}
+
 .navbar.navbar-inverse.navbar-fixed-top{
 	opacity: .93;
 }
 
-/*.share:hover {
-	background-image: url('assets/images/twitter.png');
-	border-color: white;
-}*/
+.carouselImg img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+  margin: auto;
+}
+
+.share:hover {
+	width: 27px;
+	height: 27px;
+}
+
+h1 {
+	padding-top: 2%;
+	text-align: center;
+}
+h2 {
+	margin: 0;
+}
+
+.top_image_banner {
+  background-image: url(Giants.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 15%;
+}
+
+.bottom_banner {
+	background-color: white;
+	background-size: 100%;
+
+}
+
+.above_slides {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.last_updated {
+	padding-top: 20px;
+}
