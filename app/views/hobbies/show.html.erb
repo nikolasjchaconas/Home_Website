@@ -1,9 +1,9 @@
-<div class = "Home_Banner">
-<h1>Nikolas J Chaconas</h1>
+<div class = "Hobbies_Banner">
+<h1>Hobbies</h1>
 </div>
 
 <h4 class = "above_slides">
-I am a fourth year computer science major at UC Santa Barbara. I expect to graduate in June of 2016 with both an M.S. and B.S. in Computer Science. This site was created using Ruby on Rails with Bootstrap.
+When I'm not doing schoolwork, I have a lot of hobbies. For instance, I'm president of a student-run A Cappella group, Naked Voices. Other thinks I enjoy doing are traveling, camping, skiing, and making music. Click on one of the slides below to explore one of my hobbies.
 </h4>
 
 <div class = "bottom_banner">
@@ -20,23 +20,23 @@ I am a fourth year computer science major at UC Santa Barbara. I expect to gradu
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active carouselImg">
-    	<%= link_to root_path do %>
-      		<%=image_tag "Professional.jpg", class:"carouselImg"%>
+    	<%= link_to nakedvoices_path do %>
+      		<%=image_tag "Nik_mic.jpg", class:"carouselImg"%>
       	<% end %>
-      <a href = "/" class="carousel-caption">
-        <h3>Home</h3>
-        <p>You are here.</p>
+      <a href = "/hobbies/naked_voices" class="carousel-caption">
+        <h3>Naked Voices</h3>
+        <p>UCSB's Premiere Acappella Group</p>
       </a>
     </div>
     
 
     <div class="item carouselImg">
-      <%= link_to about_path do %>
-   			<%= image_tag "greek.jpg", class:"carouselImg" %>
+      <%= link_to hobbies_path do %>
+   			<%= image_tag "zimdrop.jpg", class:"carouselImg" %>
    		<% end %>
-      <a href = "/about" class="carousel-caption">
-        <h3>About</h3>
-        <p>Learn more about me</p>
+      <a href = "/hobbies/zimbabwe" class="carousel-caption">
+        <h3>Zimbabwe</h3>
+        <p>My trip to Africa.</p>
     </a>
     </div>
     
@@ -58,7 +58,7 @@ I am a fourth year computer science major at UC Santa Barbara. I expect to gradu
       	<%end%>
       <a href = "/resume" class="carousel-caption">
         <h3>Resume</h3>
-        <p>Projects and Academics</p>
+        <p>My Academic Achievements</p>
     </a>
     </div>
     

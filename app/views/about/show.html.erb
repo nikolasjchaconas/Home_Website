@@ -1,2 +1,73 @@
-<h1>About#show</h1>
-<p>Find me in app/views/about/show.html.erb</p>
+<div class = "About_Banner">
+<h1>About</h1>
+</div>
+
+
+<div class = "bottom_banner">
+
+<h4 class = "above_slides">
+<p>
+hello world
+</p>
+</h4>
+
+<div id="myCarousel" class="carousel slide" data-interval=2800 data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active carouselImg">
+      <%=image_tag "Professional.jpg", class:"carouselImg"%>
+      <div class="carousel-caption">
+        <h3>Hello</h3>
+        <p>Red rum.</p>
+      </div>
+    </div>
+    
+
+    <div class="item carouselImg">
+      <%=image_tag "Erika.jpg", class:"carouselImg"%>
+      <div class="carousel-caption">
+        <h3>About</h3>
+        <p>See whtas up.</p>
+    </div>
+    </div>
+    
+
+    <div class="item carouselImg">
+      <%=image_tag "ErikaGuiness.jpg", class:"carouselImg"%>
+      <div class="carousel-caption">
+        <h3>About</h3>
+        <p>GUINESS.</p>
+    </div>
+    </div>
+    
+
+    <div class="item carouselImg">
+      <%=image_tag "Professional.jpg", class:"carouselImg"%>
+      <div class="carousel-caption">
+        <h3>PROFESSH</h3>
+        <p>See whtas up.</p>
+    </div>
+    </div>
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>

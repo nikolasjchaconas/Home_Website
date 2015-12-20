@@ -1,24 +1,26 @@
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
+<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
   <div class="container-fluid">
 
-
-
-
     <div class="navbar-header">
+      <span>
+      <div class = "footer_text">
+     <ul class="navbar-text pull-left" size = "1">  <i>&copy;Copyright 2015 Nikolas Chaconas.</i><br>Page Last Updated On <%= @last_updated.strftime("%B %-d, %Y at %l:%M:%S%P") %> </ul></div>
+
       <!-- make button upon collapse -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Bottom-Navbar-Button" aria-expanded="false">
+      <div class = "dropup">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Bottom-Navbar-Button" aria-expanded="false">
         <span class="sr-only">Toggle Navigation</span>
         <span class="glyphicon glyphicon-user white"aria-hidden="true"></span>
       </button>
-      
-
-        <p><ul class="navbar-text">&copy; Copyright 2015 Nikolas Chaconas.</ul></p>
+    </span>
+    </div>
 
     </div>
 
   <!-- When in normal view this appears -->
-    <div class="collapse navbar-collapse" id="Bottom-Navbar-Button">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse pull-right" id="Bottom-Navbar-Button">
+
+      <ul class="nav navbar-nav">
         <li><a href="https://www.facebook.com/nikolas.j.chaconas" target="_blank">
           <%=image_tag "Facebook.png", class:"share"%>
         </a></li>
@@ -30,10 +32,6 @@
         </a></li>
       </ul>
      </div>
-
-     
-
-
-
   </div>
 </nav>
+
