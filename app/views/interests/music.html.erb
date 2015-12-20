@@ -1,14 +1,14 @@
-<div class = "Hobbies_Banner">
-<h1>Hobbies</h1>
+<div class = "Music_Banner">
+<h1>Music</h1>
 </div>
 
 <h4 class = "above_slides">
-When I'm not doing schoolwork, I have a lot of hobbies. For instance, I'm president of a student-run A Cappella group, Naked Voices. Other thinks I enjoy doing are traveling, camping, skiing, and making music. Click on one of the slides below to explore one of my hobbies.
+I am the president of an Acappella Group, Naked Voices. I also play guitar
 </h4>
 
 <div class = "bottom_banner">
 
-<div id="myCarousel" class="carousel slide" data-interval=2800 data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-interval=4000 data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -21,33 +21,33 @@ When I'm not doing schoolwork, I have a lot of hobbies. For instance, I'm presid
   <div class="carousel-inner" role="listbox">
     <div class="item active carouselImg">
     	<%= link_to nakedvoices_path do %>
-      		<%=image_tag "Nik_mic.jpg", class:"carouselImg"%>
+      		<%=image_tag "nakedvoicesthumbnail.jpg", class:"carouselImg"%>
       	<% end %>
-      <a href = "/hobbies/naked_voices" class="carousel-caption">
+      <a href = "/interests/music/naked_voices" class="carousel-caption">
         <h3>Naked Voices</h3>
-        <p>UCSB's Premiere Acappella Group</p>
+        <p>UCSBs Premiere Acappella Group</p>
       </a>
     </div>
     
 
     <div class="item carouselImg">
-      <%= link_to hobbies_path do %>
-   			<%= image_tag "zimdrop.jpg", class:"carouselImg" %>
+      <%= link_to about_path do %>
+   			<%= image_tag "greek.jpg", class:"carouselImg" %>
    		<% end %>
-      <a href = "/hobbies/zimbabwe" class="carousel-caption">
-        <h3>Zimbabwe</h3>
-        <p>My trip to Africa.</p>
+      <a href = "/about" class="carousel-caption">
+        <h3>About</h3>
+        <p>Learn more about me</p>
     </a>
     </div>
     
 
     <div class="item carouselImg">
-      <%= link_to hobbies_path do %>
+      <%= link_to interests_path do %>
    			<%= image_tag "ErikaGuiness.jpg", class:"carouselImg" %>
    		<% end %>
-      <a href = "/hobbies" class="carousel-caption">
-        <h3>Hobbies</h3>
-        <p>Things I like to Do</p>
+      <a href = "/interests" class="carousel-caption">
+        <h3>Interests</h3>
+        <p>See Things I'm Interested In</p>
     </a>
     </div>
     
@@ -58,7 +58,7 @@ When I'm not doing schoolwork, I have a lot of hobbies. For instance, I'm presid
       	<%end%>
       <a href = "/resume" class="carousel-caption">
         <h3>Resume</h3>
-        <p>My Academic Achievements</p>
+        <p>Projects and Academics</p>
     </a>
     </div>
     

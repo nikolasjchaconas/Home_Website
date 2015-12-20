@@ -3,12 +3,14 @@
 </div>
 
 <h4 class = "above_slides">
-I am a fourth year computer science major at UC Santa Barbara. I expect to graduate in June of 2016 with both an M.S. and B.S. in Computer Science. This site was created using Ruby on Rails with Bootstrap.
+I am the President of Naked Voices, a student-run A Cappella group at UCSB. We travel all over California competing with only our voices. Check out some of our videos below!
+<%=link_to "Go back to music page", music_path, class: "btn btn-primary btn-sm"%>
 </h4>
+
 
 <div class = "bottom_banner">
 
-<div id="myCarousel" class="carousel slide" data-interval=2800 data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-interval=4000 data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -19,47 +21,28 @@ I am a fourth year computer science major at UC Santa Barbara. I expect to gradu
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+
     <div class="item active carouselImg">
-    	<%= link_to root_path do %>
-      		<%=image_tag "Professional.jpg", class:"carouselImg"%>
-      	<% end %>
-      <a href = "/" class="carousel-caption">
-        <h3>Home</h3>
-        <p>You are here.</p>
-      </a>
+          <center><iframe width="410" height="225" src="https://www.youtube.com/embed/e4-Bvw6lWQ8" frameborder="0" allowfullscreen></iframe></center>
+    </div>
+
+
+    <div class="item carouselImg">
+      		<center><iframe width="410" height="225" src="https://www.youtube.com/embed/3BdTtoQJEHw" frameborder="0" allowfullscreen></iframe></center>
     </div>
     
 
     <div class="item carouselImg">
-      <%= link_to about_path do %>
-   			<%= image_tag "greek.jpg", class:"carouselImg" %>
-   		<% end %>
-      <a href = "/about" class="carousel-caption">
-        <h3>About</h3>
-        <p>Learn more about me</p>
-    </a>
+          <center><iframe width="410" height="225" src="https://www.youtube.com/embed/BzzLTp0jQUA" frameborder="0" allowfullscreen></iframe></center>
     </div>
     
 
     <div class="item carouselImg">
-      <%= link_to hobbies_path do %>
-   			<%= image_tag "ErikaGuiness.jpg", class:"carouselImg" %>
-   		<% end %>
-      <a href = "/hobbies" class="carousel-caption">
-        <h3>Hobbies</h3>
-        <p>Things I like to Do</p>
-    </a>
-    </div>
-    
-
-    <div class="item carouselImg">
-    	<%= link_to about_path do %>
-      		<%=image_tag "Professional.jpg", class:"carouselImg"%>
-      	<%end%>
-      <a href = "/resume" class="carousel-caption">
-        <h3>Resume</h3>
-        <p>Projects and Academics</p>
-    </a>
+      <%=image_tag "nakedvoicesthumbnail.jpg", class:"carouselImg"%>
+      <h3 href = "https://www.youtube.com/user/NakedVoices" class="carousel-caption">
+        Check out more of Naked Voice's youtube videos!
+        </h3>
+        <p href = "https://www.facebook.com/UCSBLetsSingNakey/" class="carousel-caption">Or check us out on Facebook!</p>
     </div>
     
   </div>

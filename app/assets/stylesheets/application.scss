@@ -48,7 +48,7 @@ body {
 }	
 
 .carousel-caption {
-	color:grey;
+	color:darkgrey;
 	text-decoration: none;
 	-webkit-text-stroke: .5px #222222;
 }
@@ -117,12 +117,20 @@ h4 {
   padding-bottom: 10%;
 }
 
-.Hobbies_Banner {
+.Interests_Banner {
   background-image: url(yosemitepanorama.jpg); 
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 10%;
 }
+
+.Music_Banner {
+  background-image: url(naked_voices_banner.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 10%;
+}
+
 
 .NakedVoices_Banner {
   background-image: url(naked_voices_banner.jpg); 
