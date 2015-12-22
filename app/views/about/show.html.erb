@@ -1,3 +1,7 @@
+<%= stylesheet_link_tag    'about'%>
+<%= javascript_include_tag "jcarousel.js" %>
+<%= javascript_include_tag "carousel.js" %>
+
 <div class = "About_Banner">
 <h1>About</h1>
 </div>
@@ -11,63 +15,37 @@ hello world
 </p>
 </h4>
 
-<div id="myCarousel" class="carousel slide" data-interval=4000 data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+<div class="jcarousel-wrapper">
+    <div class="jcarousel">
+        <ul>
+            <li><div class = "image_wrapper"><a href = "/" >
+                <%=image_tag "Professional.jpg"%></a>
+                <a href = "/" class = "jcarousel_caption"><p class = "subtitle1">Home</p><p class = "subtitle2">Go to the Home page</p></a>
+              </div></li>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active carouselImg">
-      <%=image_tag "Professional.jpg", class:"carouselImg"%>
-      <div class="carousel-caption">
-        <h3>Hello</h3>
-        <p>Red rum.</p>
-      </div>
-    </div>
-    
+            <li><div class = "image_wrapper"><a href = "/about" >
+                <%=image_tag "sunset.jpg"%></a>
+                <a href = "/about" class = "jcarousel_caption"><p class = "subtitle1">About</p><p class = "subtitle2">You are here.</p></a>
+              </div></li>
 
-    <div class="item carouselImg">
-      <%=image_tag "Erika.jpg", class:"carouselImg"%>
-      <div class="carousel-caption">
-        <h3>About</h3>
-        <p>See whtas up.</p>
-    </div>
-    </div>
-    
+              <li><div class = "image_wrapper"><a href = "/interests" >
+                <%=image_tag "Spagetti.jpg"%></a>
+                <a href = "/interests" class = "jcarousel_caption"><p class = "subtitle1">Interests</p><p class = "subtitle2">Some of my Interests</p></a>
+              </div></li>
 
-    <div class="item carouselImg">
-      <%=image_tag "ErikaGuiness.jpg", class:"carouselImg"%>
-      <div class="carousel-caption">
-        <h3>About</h3>
-        <p>GUINESS.</p>
-    </div>
-    </div>
-    
+              <li><div class = "image_wrapper"><a href = "/resume" >
+                <%=image_tag "henley.jpg"%></a>
+                <a href = "/resume" class = "jcarousel_caption"><p class = "subtitle1">Resume</p><p class = "subtitle2">Projects and Academics</p></a>
+              </div></li>
 
-    <div class="item carouselImg">
-      <%=image_tag "Professional.jpg", class:"carouselImg"%>
-      <div class="carousel-caption">
-        <h3>PROFESSH</h3>
-        <p>See whtas up.</p>
-    </div>
-    </div>
-    
-  </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+        </ul>
+    </div>
+
+    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+    <p class="jcarousel-pagination"></p>
 </div>
 
 </div>

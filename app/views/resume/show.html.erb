@@ -2,21 +2,24 @@
 <%= javascript_include_tag "carousel.js" %>
 
 <div class = "Home_Banner">
-<h1>Nikolas J Chaconas</h1>
+<h1>Resume</h1>
 </div>
 
-<h4 class = "above_slides">
-I am a fourth year computer science major at UC Santa Barbara. I expect to graduate in June of 2017 with both an M.S. and B.S. in Computer Science. This responsive website was created using Ruby on Rails with Bootstrap.
-</h4>
 
 <div class = "bottom_banner">
+
+<h4 class = "above_slides">
+<p>
+I am a fourth year computer science major at UC Santa Barbara. I am also pursuing my Masters at UC Santa Barbara, and will graduate in June 2017 with my MS in Computer Science. For an overview of my academic achievements, download a pdf of my resume <%= link_to "Download Resume", resume_download_path, class: "btn btn-primary btn-sm" %>. Scroll through other projects I have worked on below.
+</p>
+</h4>
 
 <div class="jcarousel-wrapper">
     <div class="jcarousel">
         <ul>
             <li><div class = "image_wrapper"><a href = "/" >
                 <%=image_tag "Professional.jpg"%></a>
-                <a href = "/" class = "jcarousel_caption"><p class = "subtitle1">Home</p><p class = "subtitle2">You are here.</p></a>
+                <a href = "/" class = "jcarousel_caption"><p class = "subtitle1">Home</p><p class = "subtitle2">Go to the Home page</p></a>
               </div></li>
 
             <li><div class = "image_wrapper"><a href = "/about" >
@@ -31,7 +34,7 @@ I am a fourth year computer science major at UC Santa Barbara. I expect to gradu
 
               <li><div class = "image_wrapper"><a href = "/resume" >
                 <%=image_tag "henley.jpg"%></a>
-                <a href = "/resume" class = "jcarousel_caption"><p class = "subtitle1">Resume</p><p class = "subtitle2">Projects and Academics</p></a>
+                <a href = "/resume" class = "jcarousel_caption"><p class = "subtitle1">Resume</p><p class = "subtitle2">You are here</p></a>
               </div></li>
 
 

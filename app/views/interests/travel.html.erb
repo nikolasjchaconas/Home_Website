@@ -1,1 +1,79 @@
-Travel page
+<%= stylesheet_link_tag    'interests' %>
+<div class = "Travel_Banner">
+<h1>Travel</h1>
+</div>
+
+<h4 class = "above_slides">
+I like to travel.
+</h4>
+
+<div class = "bottom_banner">
+
+<div id="myCarousel" class="carousel slide" data-interval=3000 data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active carouselImg">
+    	<%= link_to music_path do %>
+      		<%=image_tag "Nik_mic.jpg", class:"carouselImg"%>
+      	<% end %>
+      <a href = "/interests/travel/Ireland" class="carousel-caption">
+        <h3>Ireland</h3>
+        <p>My studies abroad in Ireland and other countries</p>
+      </a>
+    </div>
+    
+
+    <div class="item carouselImg">
+      <%= link_to zimbabwe_path do %>
+   			<%= image_tag "zimdrop.jpg", class:"carouselImg" %>
+   		<% end %>
+      <a href = "/interests/travel/zimbabwe" class="carousel-caption">
+        <h3>Zimbabwe</h3>
+        <p>My trip to Zimbabwe</p>
+    </a>
+    </div>
+    
+
+    <div class="item carouselImg">
+      <%= link_to interests_path do %>
+   			<%= image_tag "ErikaGuiness.jpg", class:"carouselImg" %>
+   		<% end %>
+      <a href = "/interests/volunteer" class="carousel-caption">
+        <h3>Interests</h3>
+        <p>See things I'm interested in</p>
+    </a>
+    </div>
+    
+
+    <div class="item carouselImg">
+    	<%= link_to about_path do %>
+      		<%=image_tag "Professional.jpg", class:"carouselImg"%>
+      	<%end%>
+      <a href = "/resume" class="carousel-caption">
+        <h3>Resume</h3>
+        <p>My Academic Achievements</p>
+    </a>
+    </div>
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>

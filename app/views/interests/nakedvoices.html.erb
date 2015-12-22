@@ -1,61 +1,43 @@
+<%= stylesheet_link_tag    'interests' %>
+<%= javascript_include_tag "jcarousel.js" %>
+<%= javascript_include_tag "video_carousel.js" %>
+
 <div class = "NakedVoices_Banner">
 <h1>Naked Voices</h1>
 </div>
 
 <h4 class = "above_slides">
 I am the President of Naked Voices, a student-run A Cappella group at UCSB. We travel all over California competing with only our voices. Check out some of our videos below!
-<%=link_to "Go back to music page", music_path, class: "btn btn-primary btn-sm"%>
 </h4>
 
 
 <div class = "bottom_banner">
+<center><%=link_to "Go back to music page", music_path, class: "btn btn-primary btn-sm"%><center>
+<div class="jcarousel-wrapper">
+    <div class="jcarousel">
+        <ul>
+            <div class = "no_resize_hover"><div class = "video-container"><iframe src="https://www.youtube.com/embed/e4-Bvw6lWQ8" frameborder="0" allowfullscreen></iframe><p class = "video_subtitle1">Too Close</p>
+              </div></div>
 
-<div id="myCarousel" class="carousel slide" data-interval=4000 data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+            <div class = "no_resize_hover"><div class = "video-container"><iframe src="https://www.youtube.com/embed/3BdTtoQJEHw" frameborder="0" allowfullscreen></iframe><p class = "video_subtitle1">Valerie</p>
+              </div></div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+            <div class = "no_resize_hover"><div class = "video-container"><iframe src="https://www.youtube.com/embed/BzzLTp0jQUA" frameborder="0" allowfullscreen></iframe><p class = "video_subtitle1">Ain't No Mountain High Enough</p>
+              </div></div>
 
-    <div class="item active carouselImg">
-          <center><iframe width="410" height="225" src="https://www.youtube.com/embed/e4-Bvw6lWQ8" frameborder="0" allowfullscreen></iframe></center>
+            <div class = "no_resize_hover"><div class = "image_wrapper">
+              <%=image_tag "nakedvoicesthumbnailthinner.jpg", class: "jcarousel_image"%>
+              <p class = "end_video_slideshow_subtitle">See more of Naked Voices on <%=link_to "Youtube", "https://www.youtube.com/user/NakedVoices", target: "_blank", class: "btn btn-primary btn-sm"%> or on <%=link_to "Facebook", "https://www.facebook.com/UCSBLetsSingNakey/", class: "btn btn-primary btn-sm", target: "_blank"%></p>
+            </div></div>
+
+            
+        </ul>
     </div>
 
+    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
 
-    <div class="item carouselImg">
-      		<center><iframe width="410" height="225" src="https://www.youtube.com/embed/3BdTtoQJEHw" frameborder="0" allowfullscreen></iframe></center>
-    </div>
-    
-
-    <div class="item carouselImg">
-          <center><iframe width="410" height="225" src="https://www.youtube.com/embed/BzzLTp0jQUA" frameborder="0" allowfullscreen></iframe></center>
-    </div>
-    
-
-    <div class="item carouselImg">
-      <%=image_tag "nakedvoicesthumbnail.jpg", class:"carouselImg"%>
-      <h3 href = "https://www.youtube.com/user/NakedVoices" class="carousel-caption">
-        Check out more of Naked Voice's youtube videos!
-        </h3>
-        <p href = "https://www.facebook.com/UCSBLetsSingNakey/" class="carousel-caption">Or check us out on Facebook!</p>
-    </div>
-    
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <p class="jcarousel-pagination"></p>
 </div>
 
 </div>
