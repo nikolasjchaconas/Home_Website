@@ -211,8 +211,8 @@ ul.nav li.dropdown:active ul.dropdown-menu {
     color: grey;
 }
 
-.jcarousel-control-prev a.visited,
-.jcarousel-control-next a.visited{
+.jcarousel-control-prev:visited,
+.jcarousel-control-next:visited{
     color: white;
 }
 
