@@ -15,3 +15,4 @@ Rails.application.config.assets.precompile += %w( video_carousel.js )
 
 Rails.application.config.assets.precompile += %w( interests.css )
 Rails.application.config.assets.precompile += %w( about.css )
+Rails.application.config.assets.precompile += %w( favicon.ico )
